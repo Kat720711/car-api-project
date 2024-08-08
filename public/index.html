@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car API</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div x-data="carApp()" x-init="fetchMostBlueCars()">
+        <h1>Town with Most Blue Cars</h1>
+        <p x-text="'Town: ' + town"></p>
+        <p x-text="'Count: ' + count"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
